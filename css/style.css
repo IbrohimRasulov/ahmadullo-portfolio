@@ -138,6 +138,27 @@ span {
     color: var(--main-color);
 }
 
+.resume-end__tell{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.btn_res{
+    padding: 8px 35px;
+    border: 1px solid rgb(184, 7, 7);
+    max-width: 200px;
+    cursor: pointer;
+   transform: translateX(220px) !important;
+   margin: 0px 0px 45px 0px;
+   background-color: red;
+
+}
+.btn_res:hover {
+    background: rgb(118, 118, 118);
+    color: #fff;
+    transition: all 0.3s;
+    
+}
 .home-text h3 {
     font-size: 25px;
     margin-bottom: 55px;

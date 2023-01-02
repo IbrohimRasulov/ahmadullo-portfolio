@@ -335,6 +335,7 @@ header.sticky {
   margin-top: 4.5rem;
 }
 
+
 .row {
   background: var(--secound-bg-clor);
   padding: 55px 30px;
@@ -368,6 +369,35 @@ header.sticky {
   transform: translateY(-8px);
   box-shadow: 0 0 25px #5ddcff;
 }
+@media (max-width: 767px) {
+  .service-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+  }
+  .box img{
+    width: 100%;
+    max-width: 320px;
+  }
+  .box img:hover {
+    transform: scale(0.5);
+    background-color: #5ddcff;
+  }
+
+
+}
+  
 
 .portfolio {
   background: var(--secound-bg-clor);
@@ -383,8 +413,8 @@ header.sticky {
 }
 
 .box img {
-  max-width: 100%;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;

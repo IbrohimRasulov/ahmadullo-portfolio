@@ -52,3 +52,6 @@ var sendtelegram = function() {
     document.getElementById("message").value = "";
     return false;
 };
+
+// Animation
+AOS.init();

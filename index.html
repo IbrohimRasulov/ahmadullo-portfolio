@@ -17,43 +17,60 @@
       href="https: //fonts.googleapis.com/css2? family= Josefin+Sans:wght@700 & display=swap"
       rel="stylesheet"
     />
+    <!-- Animatio -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- === bu botga ulanga habar jo'tanish uchun -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Start header ---->
     <header>
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#" class="logo" data-aos="fade-right">Portfolio</a>
       <div class="bx bx-menu" id="menu-icon"></div>
 
-      <ul class="navbar">
+      <ul class="navbar" data-aos="fade-up" data-aos-duration="1000">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
-      <a href="tel:+998900031109" class="h-btn">Let's Talk</a>
+      <a href="tel:+998979897080" class="h-btn" data-aos="fade-left"
+        >Let's Talk</a
+      >
     </header>
     <!-- Start home ---->
     <section class="home" id="home">
-      <div class="home-text">
+      <div
+        class="home-text"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <h4>Hello, my name is</h4>
         <h1>Ahmadullo <span>Ne'matov</span></h1>
         <h3>I am a Web Devaloper</h3>
         <div class="newslatter">
-          <form>
+          <form action="" onsubmit=" return sendtelegram()">
             <input
               type="email"
               name="email"
-              id="mail"
-              placeholder="Enter Your Email"
+              id="email"
+              placeholder="Email manzilingiz"
+              required
+              autocomplete="off"
             />
-            <input type="submit" name="submit" value="Let's start" />
+            <input type="submit" name="submit" value="Yuborish" id="btn" />
           </form>
         </div>
       </div>
-      <div class="home_img">
+      <div
+        class="home_img"
+        data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500"
+      >
         <img
           src="./imges/wepik-simple-futuristic-pink-coding-logo-2022111-1556.png"
           width="100%"
@@ -63,14 +80,14 @@
     </section>
     <!-- start about -->
     <section class="about" id="about">
-      <div class="about-img">
+      <div class="about-img" data-aos="fade-up" data-aos-duration="3000">
         <img
           src="./imges/wepik-gradient-developers-coding-logo-20221029-104257.png"
           width="100%"
           alt=""
         />
       </div>
-      <div class="about-text">
+      <div class="about-text" data-aos="fade-up" data-aos-duration="3000">
         <h2>About Us</h2>
         <h5>Devaloper <span>& Designer</span></h5>
         <p>
@@ -109,7 +126,7 @@
     </section>
     <!-- start services -->
     <section class="services" id="services">
-      <div class="center">
+      <div class="center" data-aos="fade-up" data-aos-duration="3000">
         <h2>My Awesome Services</h2>
         <p>
           Front-end web developer with a love for clean code and accessible
@@ -119,7 +136,7 @@
         </p>
       </div>
       <div class="service-content">
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="3000">
           <img src="./imges/html-5.png" width="50px" alt="" />
           <br />
           <h3>HTML</h3>
@@ -131,7 +148,7 @@
           </p>
         </div>
 
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="3000">
           <img src="./imges/css-3.png" width="50px" alt="" />
           <br />
           <h3>CSS</h3>
@@ -142,7 +159,7 @@
             and technologies, and capable of ramping up quickly and efficiently.
           </p>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="3000">
           <img src="./imges/sass.png" width="50px" alt="" />
           <br />
           <h3>Sass</h3>
@@ -153,7 +170,7 @@
             and technologies, and capable of ramping up quickly and efficiently.
           </p>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="3000">
           <img src="./imges/js.png" width="50px" alt="" />
           <br />
           <h3>JavaScript</h3>
@@ -164,7 +181,7 @@
             and technologies, and capable of ramping up quickly and efficiently.
           </p>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="3000">
           <img src="./imges/react.png" width="50px" alt="" />
           <br />
           <h3>React Js</h3>
@@ -175,7 +192,7 @@
             and technologies, and capable of ramping up quickly and efficiently.
           </p>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="3000">
           <img src="./imges/vue.png" width="50px" alt="" />
           <br />
           <h3>Vue Js</h3>
@@ -190,7 +207,7 @@
     </section>
     <!-- start portfolio -->
     <section class="portfolio" id="portfolio">
-      <div class="center">
+      <div class="center" data-aos="zoom-out-up">
         <h2>My Awesome Services</h2>
         <p>
           Thera are many variations of Lorem Ipsum available, but the <br />
@@ -199,7 +216,7 @@
       </div>
 
       <div class="portfolio-content">
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://websitequloqchin.netlify.app/" target="_blank">
             <img
               src="./imges/Screenshot_20221114_114533.png"
@@ -214,7 +231,7 @@
           </h5>
         </div>
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://fastfoodburgers.netlify.app/" target="_blank">
             <img src="./imges/fastfoof.png" alt=""
           /></a>
@@ -222,7 +239,7 @@
           <h5>This site is made for practice . Html ,css and JavaScript</h5>
         </div>
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://xashamatli.netlify.app/" target="_blank">
             <img src="./imges/2022-06-18_19-26-16.png" alt=""
           /></a>
@@ -230,7 +247,7 @@
           <h5>This site is made for practice . Html ,css and JavaScript</h5>
         </div>
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://apc-abrisdc.com/" target="_blank">
             <img src="./imges/apc.png" alt=""
           /></a>
@@ -238,15 +255,15 @@
           <h5>This is a real site made by apc company</h5>
         </div>
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://jocular-twilight-5e859a.netlify.app/" target="_blank"
             ><img src="./imges/pwj.png" alt=""
           /></a>
-          <p>PWJ </p>
+          <p>PWJ</p>
           <h5>The service provide for designer</h5>
         </div>
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://elektromarket.netlify.app/" target="_blank">
             <img src="./imges/2022-06-19_13-32-12.png" alt=""
           /></a>
@@ -254,7 +271,7 @@
           <h5>The service provide for designer</h5>
         </div>
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://todobestmin.netlify.app/" target="_blank">
             <img src="./imges/todo3.png" alt=""
           /></a>
@@ -264,7 +281,7 @@
 
         <!--====-->
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://reactjsmarket.netlify.app/" target="_blank">
             <img src="./imges/Screenshot_20221109_070103.png" alt=""
           /></a>
@@ -274,42 +291,45 @@
 
         <!--====-->
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://gamecardbest.netlify.app/" target="_blank">
             <img src="./imges/gamecard.png" alt=""
           /></a>
           <p>Game Pokemon</p>
-          <h5>Game card Html & Css and JS  API</h5>
+          <h5>Game card Html & Css and JS API</h5>
         </div>
 
         <!--====-->
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://mealbest.netlify.app/" target="_blank">
             <img src="./imges/meal.png" alt=""
           /></a>
           <p>Meal Best</p>
-          <h5>He calculates the price of vegetables to be eaten. Html & Css and JS  localstorage</h5>
+          <h5>
+            He calculates the price of vegetables to be eaten. Html & Css and JS
+            localstorage
+          </h5>
         </div>
 
         <!--====-->
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://cargamebest.netlify.app/" target="_blank">
             <img src="./imges/gamecar.png" alt=""
           /></a>
           <p>Game Car</p>
-          <h5>Html & Css and JS </h5>
+          <h5>Html & Css and JS</h5>
         </div>
 
         <!--====-->
         <!--====-->
-        <div class="box">
+        <div class="box" data-aos="zoom-in-down">
           <a href="https://gamebest.netlify.app/" target="_blank">
             <img src="./imges/tens.png" alt=""
           /></a>
           <p>Game Tens online</p>
-          <h5>Html & Css and JS </h5>
+          <h5>Html & Css and JS</h5>
         </div>
 
         <!--====-->
@@ -317,23 +337,46 @@
     </section>
     <!-- star contact -->
     <section class="contact" id="contact">
-      <div class="contact-form">
+      <div class="contact-form" data-aos="zoom-out-right">
         <h2>Hier Me</h2>
         <p>
-          I am available for freelance work. Connect with me via
-          phone:+998900031109 or email: ahmadillo.web@gmail.com
+          I am available for freelance work. Connect with me via phone:
+          <a href="tel:+998900031109">+998900031109</a> &
+          <a href="tel:+998979897080">+998979897080</a> or email:
+          ahmadillo.web@gmail.com
         </p>
         <form action="" onsubmit=" return sendtelegram()">
-          <input type="text" name="name" id="name" placeholder="Ismingiz" required autocomplete="off">
-          <input type="email" name="email" id="email" placeholder="Email manzilingiz" required autocomplete="off">
-          <textarea name="message" id="message" cols="45" rows="10" placeholder="Izoh qoldiring" required></textarea> 
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ismingiz"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email manzilingiz"
+            required
+            autocomplete="off"
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="45"
+            rows="10"
+            placeholder="Izoh qoldiring"
+            required
+          ></textarea>
           <button type="sumbit" value="Yuborish" id="btn" class="send">
             Submit
           </button>
         </form>
       </div>
 
-      <div class="contact-img">
+      <div class="contact-img" data-aos="zoom-out-left">
         <img
           src="./imges/photo_2022-11-28_20-13-40-removebg-preview.png"
           alt=""
@@ -351,11 +394,14 @@
       })("https://widget.replain.cc/dist/client.js");
     </script>
     <!-- start footer -->
-    <div class="footer">
-      <div class="d-flex">
+    <div class="footer" >
+      <div class="d-flex" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
         <p>Copyright © 2023 Ahmadullo Ne'matov. All Rights Reserved</p>
       </div>
     </div>
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!---- link to js ---->
     <script type="text/javascript" src="./Javascript/script.js"></script>
   </body>

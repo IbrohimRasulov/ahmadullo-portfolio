@@ -370,11 +370,11 @@ header.sticky {
 }
 @media (max-width: 767px) {
   .service-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    grid-gap: 2rem;
+    display: flex;
     align-items: center;
-    margin-top: 4.5rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
   .box{
     display: flex;
@@ -383,7 +383,7 @@ header.sticky {
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
   }
   .box img{
     width: 100%;
@@ -525,6 +525,14 @@ form textarea {
 }
 
 @media (max-width: 1270px) {
+  .portfolio-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
   header {
     padding: 18px 4%;
     transition: 0.2s;
